@@ -1,0 +1,20 @@
+{
+  "tables": [
+    {
+      "name": "Sales",
+      "columns": ["SalesAmount", "OrderDate", "ProductID", "GeographyID"]
+    },
+    {
+      "name": "Geography",
+      "columns": ["City", "Region", "GeographyID"]
+    }
+  ],
+  "relationships": [
+    {
+      "fromTable": "Sales",
+      "fromColumn": "GeographyID",
+      "toTable": "Geography",
+      "toColumn": "GeographyID"
+    }
+  ]
+}

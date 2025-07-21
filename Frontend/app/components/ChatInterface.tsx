@@ -88,7 +88,7 @@ const ChatInterface: React.FC = () => {
                   {msg.data.map((row, idx) => (
                     <tr key={idx}>
                       {Object.values(row).map((val, i) => (
-                        <td key={i} style={{ border: '1px solid #ccc', padding: 5 }}>{val}</td>
+                        <td key={i} style={{ border: '1px solid #ccc', padding: 5 }}>{val as string}</td>
                       ))}
                     </tr>
                   ))}
